@@ -34,5 +34,21 @@ public class SalaDeCine {
 			}
 		}
 	}
+	
+	public boolean isSalaVacia() {
+		if(butacaLibre == true) {
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean isBuatacaOcupada(Butaca butacaElegida) {
+		for(int i=0;i<butacasTotales.length;i++) {
+			if(butacasTotales[i] == butacaElegida) {
+				return true;
+			}
+		}
+		return false;
+	}
 
 }
